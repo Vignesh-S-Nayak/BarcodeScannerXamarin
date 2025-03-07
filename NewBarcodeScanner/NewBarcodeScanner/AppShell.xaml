@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:NewBarcodeScanner.Views"
+       x:Class="NewBarcodeScanner.AppShell"
+       BackgroundColor="White"
+       Shell.TitleColor="Black"
+       Shell.ForegroundColor="Black"
+       Shell.TabBarBackgroundColor="White"
+       Shell.TabBarForegroundColor="Black"
+       Shell.TabBarTitleColor="Black"
+       Shell.TabBarUnselectedColor="Black">
+
+    <TabBar>
+        <ShellContent Title="Scan" 
+                      Icon="Scan.png" 
+                      Route="scan" 
+                      ContentTemplate="{DataTemplate local:ScanPage}" />
+        <ShellContent Title="Scanned Items" 
+                      Icon="Cart.png" 
+                      Route="items" 
+                      ContentTemplate="{DataTemplate local:ItemsPage}" />
+    </TabBar>
+</Shell>
